@@ -27,7 +27,7 @@ SENSITIVE_PATTERNS = {
     # WebView & URL Handling Issues
     "WebView Security": re.compile(r'(?i)addJavascriptInterface|setJavaScriptEnabled|loadDataWithBaseURL|setWebContentsDebuggingEnabled|setAllowContentAccess|setAllowFileAccess|setDomStorageEnabled|setAllowUniversalAccessFromFileURLs'),
     "Custom URL Schemes": re.compile(r'(?i)intent-filter.*data.*scheme'),
-    "Implicit Intents": re.compile(r'(?i)startActivity\(new Intent\(\))'),
+    # "Implicit Intents": re.compile(r'(?i)startActivity\(new Intent\(\))'),
     
     # Broadcast & Intent Security Issues
     "Broadcast Security": re.compile(r'(?i)sendBroadcast|sendBroadcastAsUser|sendOrderedBroadcast|sendOrderedBroadcastAsUser|sendStickyBroadcast|sendStickyBroadcastAsUser|sendStickyOrderedBroadcast|sendStickyOrderedBroadcastAsUser'),
